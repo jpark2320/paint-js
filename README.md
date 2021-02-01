@@ -1,2 +1,3 @@
-# paint-js
+# painter-js
+
 Painter with Vanilla JS
