@@ -16,9 +16,35 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
+.controls {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.controls .controls__btns {
+  margin-bottom: 30px;
+}
+.controls .controls__btns button {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 0;
+  width: 80px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+}
+.controls .controls__btns button:active {
+  transform: scale(0.97);
+}
 .controls .controls__colors {
   display: flex;
-  margin-top: 80px;
 }
 .controls__colors .controls__color {
   width: 50px;
@@ -56,4 +82,10 @@ body {
 }
 .controls__colors .controls__color:nth-child(9) {
   background-color: #5856d6;
+}
+.controls .controls__range {
+  margin-bottom: 20px;
+}
+.controls .controls__range input[type='range'] {
+  cursor: pointer;
 }
